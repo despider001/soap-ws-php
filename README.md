@@ -3,9 +3,9 @@
 ## Steps
 
 1.  [Define your Methods](#1-define-your-methods)
-2.  [Generate WSDL file for Your Methods](#2-generate-wSDL-file-for-your-methods)
-3.  [Create Server.php to serve your WebService](#3-create-server.php-to-serve-your-webService)
-4.  [Create Client.php to consume/test your WebService](#4-create-client.php-to-consume/test-your-webService)
+2.  [Generate WSDL file for Your Methods](#2-generate-wsdl-file-for-your-methods)
+3.  [Create Server.php to serve your WebService](#3-create-serverphp-to-serve-your-webservice)
+4.  [Create Client.php to consume/test your WebService](#4-create-clientphp-to-consumetest-your-webservice)
 
 ### 1. Define your Methods
 
