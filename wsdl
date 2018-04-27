@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://localhost/demo/SOAP/php/php_ws_book/with_wsdl/Server.
-php" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="Events" targetNamespace="http://localhost/demo/SOAP/php/php_ws_book/with_wsdl/Server.php">
+<definitions xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://localhost/path/to/project/root/Server.
+php" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap-enc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="Events" targetNamespace="http://localhost/path/to/project/root/Server.php">
   <types>
-    <xsd:schema targetNamespace="http://localhost/demo/SOAP/php/php_ws_book/with_wsdl/Server.php">
+    <xsd:schema targetNamespace="http://localhost/path/to/project/root/Server.php">
       <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
     </xsd:schema>
   </types>
@@ -21,27 +21,27 @@ php" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3
   <binding name="EventsBinding" type="tns:EventsPort">
     <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
     <operation name="getEvents">
-      <soap:operation soapAction="http://localhost/demo/SOAP/php/php_ws_book/with_wsdl/Server.php#getEvents"/>
+      <soap:operation soapAction="http://localhost/path/to/project/root/Server.php#getEvents"/>
       <input>
-        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/demo/SOAP/php/php_ws_book/with_wsdl/Server.php"/>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/path/to/project/root/Server.php"/>
       </input>
       <output>
-        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/demo/SOAP/php/php_ws_book/with_wsdl/Server.php"/>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/path/to/project/root/Server.php"/>
       </output>
     </operation>
     <operation name="getEventById">
-      <soap:operation soapAction="http://localhost/demo/SOAP/php/php_ws_book/with_wsdl/Server.php#getEventById"/>
+      <soap:operation soapAction="http://localhost/path/to/project/root/Server.php#getEventById"/>
       <input>
-        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/demo/SOAP/php/php_ws_book/with_wsdl/Server.php"/>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/path/to/project/root/Server.php"/>
       </input>
       <output>
-        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/demo/SOAP/php/php_ws_book/with_wsdl/Server.php"/>
+        <soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="http://localhost/path/to/project/root/Server.php"/>
       </output>
     </operation>
   </binding>
   <service name="EventsService">
     <port name="EventsPort" binding="tns:EventsBinding">
-      <soap:address location="http://localhost/demo/SOAP/php/php_ws_book/with_wsdl/Server.php"/>
+      <soap:address location="http://localhost/path/to/project/root/Server.php"/>
     </port>
   </service>
   <message name="getEventsIn"/>
